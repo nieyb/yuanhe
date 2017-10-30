@@ -1,3 +1,4 @@
+# -*- encoding:utf-8 -*-
 from os import popen
 from urllib2 import urlopen, URLError
 from bs4 import BeautifulSoup
@@ -35,7 +36,7 @@ class frm_PhishingManager(QtGui.QWidget):
         self.Main  = QtGui.QVBoxLayout()
         self.config = frm_Settings()
         self.session = str()
-        self.setWindowTitle('Phishing Manager')
+        self.setWindowTitle(u'钓鱼管理')
         self.ThreadTemplates = {'Server':[]}
         self.setGeometry(0, 0, 630, 100)
         self.loadtheme(self.config.get_theme_qss())
@@ -105,7 +106,7 @@ class frm_PhishingManager(QtGui.QWidget):
         self.Group_Html  = QtGui.QGroupBox(self)
         self.Group_List   = QtGui.QGroupBox(self)
         self.Group_Html.setTitle('index.html:')
-        self.Group_List.setTitle('Requests:')
+        self.Group_List.setTitle(u'请求:')
 
         self.txt_html       = QtGui.QTextEdit(self)
         self.ListOutputWid  = QtGui.QListWidget(self)
@@ -114,8 +115,8 @@ class frm_PhishingManager(QtGui.QWidget):
         self.frmOutput.addRow(self.ListOutputWid)
 
         # button stop,start
-        self.btn_start_template = QtGui.QPushButton('Start Server')
-        self.btn_stop_template  = QtGui.QPushButton('Stop Server')
+        self.btn_start_template = QtGui.QPushButton(u'开始 Server')
+        self.btn_stop_template  = QtGui.QPushButton(u'停止 Server')
         self.btn_start_template.setIcon(QtGui.QIcon('icons/start.png'))
         self.btn_stop_template.setIcon(QtGui.QIcon('icons/Stop.png'))
         self.btn_stop_template.setEnabled(False)
@@ -127,8 +128,8 @@ class frm_PhishingManager(QtGui.QWidget):
         self.GroupSettings  = QtGui.QGroupBox(self)
         self.GroupCheckBox  = QtGui.QGroupBox(self)
         self.GroupCloneSite = QtGui.QGroupBox(self)
-        self.GroupSettings.setTitle('settings:')
-        self.GroupCheckBox.setTitle('Options:')
+        self.GroupSettings.setTitle(u'设置:')
+        self.GroupCheckBox.setTitle(u'选项:')
         self.GroupCloneSite.setTitle('clone:')
 
 

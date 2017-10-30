@@ -1,3 +1,4 @@
+# -*- encoding:utf-8 -*-
 from datetime import date
 from os import path, remove
 from shutil import copyfile
@@ -29,7 +30,7 @@ threadloading = {'server':[]}
 class frm_update_attack(PumpkinModule):
     def __init__(self, parent=None):
         super(frm_update_attack, self).__init__(parent)
-        self.setWindowTitle('Windows Update Attack Generator ')
+        self.setWindowTitle(u'Windows 更新')
         self.setWindowIcon(QtGui.QIcon('icons/icon.ico'))
         self.Main       = QtGui.QVBoxLayout()
         self.path_file  = None
@@ -64,24 +65,24 @@ class frm_update_attack(PumpkinModule):
         #group box
         self.layoutPage = QtGui.QFormLayout()
         self.GroupPages = QtGui.QGroupBox(self)
-        self.GroupPages.setTitle('Phishing Page:')
+        self.GroupPages.setTitle(u'钓鱼页:')
         self.GroupPages.setLayout(self.layoutPage)
 
         self.layoutAdpter = QtGui.QFormLayout()
         self.GroupAdpter = QtGui.QGroupBox(self)
-        self.GroupAdpter.setTitle('Network Adapter:')
+        self.GroupAdpter.setTitle(u'网络适配器:')
         self.GroupAdpter.setLayout(self.layoutAdpter)
 
         self.layoutLogBox = QtGui.QFormLayout()
         self.GroupLogger = QtGui.QGroupBox(self)
-        self.GroupLogger.setTitle('Log::Requests:')
+        self.GroupLogger.setTitle(u'日志::请求:')
         self.GroupLogger.setLayout(self.layoutLogBox)
 
         # buttons
         self.btn_open         = QtGui.QPushButton("...")
-        self.btn_stop         = QtGui.QPushButton("Stop Server")
-        self.btn_reload       = QtGui.QPushButton("Refresh")
-        self.btn_start_server = QtGui.QPushButton("Start Server")
+        self.btn_stop         = QtGui.QPushButton(u"停止 Server")
+        self.btn_reload       = QtGui.QPushButton(u"刷新")
+        self.btn_start_server = QtGui.QPushButton(u"开始 Server")
         # size
         self.btn_open.setMaximumWidth(90)
         self.btn_stop.setFixedHeight(50)

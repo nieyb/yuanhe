@@ -86,7 +86,7 @@ class frmAbout(PumpkinModule):
 
     def Qui_update(self):
         self.logoapp = QtGui.QLabel('')
-        self.logoapp.setPixmap(QtGui.QPixmap('icons/icon.png').scaled(64,64))
+        self.logoapp.setPixmap(QtGui.QPixmap('icons/icon1.jpg').scaled(64,64))
         self.form = QtGui.QFormLayout()
         self.form2 = QtGui.QHBoxLayout()
         self.form.addRow(self.logoapp,QtGui.QLabel(
