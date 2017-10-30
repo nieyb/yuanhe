@@ -1386,6 +1386,8 @@ class WifiPumpkin(QtGui.QWidget):
                 self.THReactor.start()
 
         #create logging for somes threads
+        print '===========file========'
+        print C.LOG_PUMPKINPROXY
         setup_logger('pumpkinproxy', C.LOG_PUMPKINPROXY, self.currentSessionID)
         setup_logger('urls_capture', C.LOG_URLCAPTURE, self.currentSessionID)
         setup_logger('creds_capture', C.LOG_CREDSCAPTURE, self.currentSessionID)

@@ -2,6 +2,7 @@ import os
 
 dir_of_executable = os.path.dirname(__file__)
 
+
 # window constants
 GEOMETRYH = 820
 GEOMETRYW = 500

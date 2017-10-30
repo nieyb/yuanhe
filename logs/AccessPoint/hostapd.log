@@ -1,0 +1,29 @@
+SessionID[MzA3Mjc=] 2017-10-30 10:31:26,420 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlx6cfdb9c8c77e with hwaddr bc:f6:85:7f:2f:15 and ssid "2222"
+wlx6cfdb9c8c77e: interface state UNINITIALIZED->ENABLED
+wlx6cfdb9c8c77e: AP-ENABLED 
+
+SessionID[MzA3Mjc=] 2017-10-30 10:32:03,899 : wlx6cfdb9c8c77e: STA 68:3e:34:83:86:c0 IEEE 802.11: authenticated
+
+SessionID[MzA3Mjc=] 2017-10-30 10:32:03,902 : wlx6cfdb9c8c77e: STA 68:3e:34:83:86:c0 IEEE 802.11: associated (aid 1)
+wlx6cfdb9c8c77e: AP-STA-CONNECTED 68:3e:34:83:86:c0
+
+SessionID[MzA3Mjc=] 2017-10-30 10:32:03,906 : wlx6cfdb9c8c77e: STA 68:3e:34:83:86:c0 RADIUS: starting accounting session 59F68EFB-00000000
+
+SessionID[MzA3Mjc=] 2017-10-30 10:33:18,092 : wlx6cfdb9c8c77e: STA dc:ef:ca:31:6a:1f IEEE 802.11: authenticated
+
+SessionID[MzA3Mjc=] 2017-10-30 10:33:18,097 : wlx6cfdb9c8c77e: STA dc:ef:ca:31:6a:1f IEEE 802.11: associated (aid 2)
+wlx6cfdb9c8c77e: AP-STA-CONNECTED dc:ef:ca:31:6a:1f
+
+SessionID[MzA3Mjc=] 2017-10-30 10:33:18,101 : wlx6cfdb9c8c77e: STA dc:ef:ca:31:6a:1f RADIUS: starting accounting session 59F68EFB-00000001
+
+SessionID[MzA3Mjc=] 2017-10-30 10:33:31,366 : wlx6cfdb9c8c77e: AP-STA-DISCONNECTED dc:ef:ca:31:6a:1f
+wlx6cfdb9c8c77e: STA dc:ef:ca:31:6a:1f IEEE 802.11: disassociated
+
+SessionID[MzA3Mjc=] 2017-10-30 10:33:32,367 : wlx6cfdb9c8c77e: STA dc:ef:ca:31:6a:1f IEEE 802.11: deauthenticated due to inactivity (timer DEAUTH/REMOVE)
+
+SessionID[NjU4NjA=] 2017-10-30 11:49:44,072 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlx6cfdb9c8c77e with hwaddr bc:f6:85:7f:2f:15 and ssid "2222"
+wlx6cfdb9c8c77e: interface state UNINITIALIZED->ENABLED
+wlx6cfdb9c8c77e: AP-ENABLED 
+
