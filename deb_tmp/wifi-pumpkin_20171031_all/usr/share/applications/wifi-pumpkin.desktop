@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=u'远禾科技'
+Comment=A tool for creating a WiFi-Hotspot and executing MitM-Attacks
+Exec=gksudo wifi-pumpkin
+Icon=/usr/share/yuanhe/icons/icon.jpg
+Terminal=false
+Type=Application
+StartupNotify=false

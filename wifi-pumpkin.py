@@ -44,6 +44,7 @@ if __name__ == '__main__':
     check_dep_pumpkin()
     from os import getuid
     if not getuid() == 0:
+
         exit('[{}!{}] WiFi-Pumpkin must be run as root.'.format(C.RED,C.ENDC))
 
     app = ApplicationLoop(argv)
@@ -53,7 +54,7 @@ if __name__ == '__main__':
 
     print('Loading GUI...')
     main = Initialize()
-    main.setWindowIcon(QtGui.QIcon('icons/icon1.jpg'))
+    main.setWindowIcon(QtGui.QIcon('icons/icon.png'))
     main.center()
     # check if Wireless connection
     conf = SettingsINI(C.CONFIG_INI)
@@ -61,9 +62,10 @@ if __name__ == '__main__':
         networkcontrol = CLI_NetworkManager() # add all interface avaliable for exclude
         main.networkcontrol = networkcontrol
         if networkcontrol.run():
+
             if  networkcontrol.isWiFiConnected() and len(networkcontrol.ifaceAvaliable) > 0:
                 settings = UI_NetworkManager(main)
-                settings.setWindowIcon(QtGui.QIcon('icons/icon1.jpg'))
+                settings.setWindowIcon(QtGui.QIcon('icons/icon.png'))
                 settings.show()
                 exit(app.exec_())
     main.show()

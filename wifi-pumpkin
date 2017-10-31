@@ -1,2 +1,1 @@
 #!/bin/bash
-cd /usr/share/WiFi-Pumpkin/ && sudo python wifi-pumpkin.py

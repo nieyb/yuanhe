@@ -1,0 +1,2 @@
+#!/bin/bash
+cd /usr/share/yuanhe/ && sudo python wifi-pumpkin.py
