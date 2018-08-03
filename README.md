@@ -169,18 +169,5 @@ class ExamplePlugin(PSniffer):
             print http_layer # show item type dict
             print ip_layer # show item type dict
             
-            return self.output.emit({'name_module':'send output to tab TCP-Proxy'}) 
 
-```
-#### About TCP-Proxy
-[TCP-Proxy](https://github.com/P0cL4bs/WiFi-Pumpkin/wiki/TCP-PProxy) on the wiki 
-
-### Screenshots
-[Screenshot](https://github.com/P0cL4bs/WiFi-Pumpkin/wiki/Screenshots) on the wiki 
-
-### FAQ
-[FAQ](https://github.com/P0cL4bs/WiFi-Pumpkin/wiki/FAQ) on the wiki
-
-### Contact Us
-Whether you want to report a [bug](https://github.com/P0cL4bs/WiFi-Pumpkin/issues/new), send a patch or give some suggestions on this project, drop us or open [pull requests](https://github.com/P0cL4bs/WiFi-Pumpkin/pulls) 
 
